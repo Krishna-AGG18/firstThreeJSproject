@@ -1,9 +1,7 @@
 # 🧠 AI-Powered 3D T-Shirt Customizer
 
-An interactive web application built with **React** and **Three.js**, enabling users to customize **3D t-shirt models in real-time**.
-Users can **change colors**, **upload logos or textures**, **generate AI-powered designs using DALL·E**, and **download their creations** — all from the browser.
-
-This project was built by following the [JavaScript Mastery](https://www.youtube.com/watch?v=ZqEa8fTxypQ) tutorial **“Build and Deploy an AI-Powered 3D Website Using React | 2024 Three JS Course Tutorial for Beginners”**, with personalized modifications and enhancements.
+An interactive web application built with **React** and **Three.js**, enabling users to customize **3D t-shirt models in real time**.
+Users can **change colors**, **upload logos or textures**, **generate AI-powered designs**, and **download their creations** — all from the browser.
 
 ![Project Demo](https://via.placeholder.com/800x400?text=3D+T-Shirt+Customizer+Demo)
 
@@ -21,8 +19,8 @@ It offers a hands-on experience with **3D rendering**, **AI integration**, **sta
 * 🎨 **3D Model Customization** – Load, rotate, and modify a GLTF t-shirt model in real time.
 * 🌈 **Color Picker** – Choose or input any custom color to update the model’s appearance instantly.
 * 🖼️ **File Upload** – Upload logos or patterns to apply as decals.
-* 🤖 **AI Image Generation** – Generate unique designs using **OpenAI’s DALL·E** based on text prompts.
-* 🧩 **Toggle Controls** – Enable/disable logo and full texture independently.
+* 🤖 **AI Image Generation** – Generate unique designs using text prompts.
+* 🧩 **Toggle Controls** – Enable or disable logo and full texture independently.
 * 📸 **Download Functionality** – Capture and download the customized 3D t-shirt image.
 * ⚡ **Smooth Animations** – Framer Motion adds fluid transitions and engaging motion effects.
 * 📱 **Fully Responsive** – Built with Tailwind CSS for an optimized experience on all devices.
@@ -42,7 +40,7 @@ It offers a hands-on experience with **3D rendering**, **AI integration**, **sta
 
 **AI Integration**
 
-* OpenAI DALL·E API (via @google/generative-ai)
+* OpenAI DALL·E API (or any AI image API)
 
 **State Management**
 
@@ -79,16 +77,15 @@ npm install
 If you want to use AI-generated designs:
 
 * Create a `.env` file in the root directory.
-* Add your OpenAI API key:
+* Add your API key:
 
   ```
-  OPENAI_API_KEY=your_openai_api_key
+  OPENAI_API_KEY=your_api_key
   ```
 
 ### 4. Download Assets
 
-Download the 3D model and texture files from the tutorial’s Google Drive (linked in the video description).
-Place them in:
+Place your 3D model and texture files in:
 
 ```
 public/
@@ -111,7 +108,7 @@ Then open: **[http://localhost:5173](http://localhost:5173)**
 2. **Customizer Interface** –
 
    * Select colors or upload your own logo.
-   * Use AI prompt to generate a design.
+   * Use an AI prompt to generate a design.
    * Toggle logo/full texture.
 3. **Download** – Click the camera icon to export your customized shirt as an image.
 4. **Navigation** – Use the "Go Back" button to return to the homepage.
@@ -130,10 +127,10 @@ npm run build
 
 ### Deploy Options
 
-* **Hostinger** (recommended in tutorial): Upload the `dist/` folder via File Manager.
-* **Vercel / Netlify**: Connect your repo and use build command:
+* **Hostinger** – Upload the `dist/` folder via File Manager.
+* **Vercel / Netlify** – Connect your repo and use the build command:
 
-  ```
+  ```bash
   npm run build
   ```
 
@@ -148,8 +145,6 @@ npm run build
 npm update @react-three/drei @react-three/fiber
 ```
 
-Refer to this fix: [JavaScript Mastery Pull Request #45](https://github.com/adrianhajdin/project_threejs_ai/pull/45)
-
 ---
 
 ## 💡 Learning Outcomes
@@ -158,11 +153,15 @@ Through this project, I learned:
 
 * How to integrate **Three.js** with **React** using **React Three Fiber**.
 * How to manage app-wide state using **Voltio**.
-* The basics of **AI-powered image generation** and handling **OpenAI APIs**.
+* The basics of **AI-powered image generation** and handling APIs.
 * Implementing **3D rendering, animations, and performance optimization** in React.
 
 ---
 
+## 📜 License
 
-Would you like me to make it **more personalized** (for example, mentioning your learning journey like *“Built as part of my React + Three.js learning phase to explore 3D web development and AI integration”*)?
-I can tailor the intro and ending sections that way for your GitHub.
+This project is open-source under the **MIT License** — feel free to use, modify, and share.
+
+---
+
+Would you like me to **personalize it further** (for example, mentioning that you built it while learning React and Three.js or experimenting with AI features)?
